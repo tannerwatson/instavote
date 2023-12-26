@@ -17,3 +17,8 @@ commonLabels:
   env: vote-staging
 commonAnnotations:
   supported-by: "src@example.com"
+configMapGenerator:
+  - name: vote
+    literals:
+      - OPTION_A=STAGING
+      - OPTION_B=DEV
